@@ -90,8 +90,8 @@
       <br />
       <section id="table">
         <h3>Table Example</h3>
+        <!--Validation Error caused below because of obsolete attribute. Supposed to use CSS instead (but I can't because of homework constraint)-->
         <table border=1>
-          <!--Validation Error caused because of obsolete attribute. Supposed to use CSS instead but I don't want to (hw constraints)-->
           <caption>Table of My Cats!</caption>
           <!--Style used to show col function-->
           <colgroup>
@@ -110,7 +110,7 @@
         </table>
       </section>
 
-      <section>
+      <section id="canvas-experiment">
         <figure>
           <canvas id="table-flipper" width="600" height="50">
             <script>
@@ -124,12 +124,12 @@
         </figure>
       </section>
 
-      <section>
+      <section id="svg-experiment">
         <svg width="200" height="100">
-          <rect width="200" height="100" />
+          <rect width="200" height="100" fill="green"/>
+          <circle cx="60" cy="60" r="50" fill="blue" />
         </svg>
       </section>
-
     </section>
   </main>
   <footer>
