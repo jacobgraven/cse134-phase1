@@ -12,64 +12,188 @@
 
 <body>
   <header>
-    <h1>Welcome!</h1>
+    <h1><span>Jacob Graven | (Aspiring) Software Engineer</span></h1>
     <nav>
+      <a href="#">Home</a> |
+      <a href="./experiments.html">Experiments</a>
       <ul>
         <li><a href="#about-me-section">About Me</a></li>
-        <li><a href="#education-section">Education, Experience, and Skills</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-        <li><a href="./experiments.html">Experiments</a></li>
+        <li><a href="#education-section">Professional Information</a></li>
+        <li><a href="#projects-section">My Projects</a></li>
+        <li><a href="#contact-section">Contact Me</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="about-me">
-      <h2>About me</h2>
+      <h2>About Me</h2>
       <div>
         <picture>
           <img src="media/images/pfp.jpeg" alt="A Picture of me!" width="160" height="120" />
         </picture>
       </div>
       <p>
-        Hello there! My name is <b>Jacob Graven</b> and this is my personal web portfolio! Below you will find
+        Hello there! My name is <strong>Jacob Graven</strong> and this is my personal web portfolio! Below you will find
         all sorts of cool information about my professional career and experience as a software engineer! If you'd
         like to know more about me, just know that I love everything and anything to do with cats. I consider myself
-        to be quite the feline enthusiast.
+        to be quite the <em>feline enthusiast.</em> Unfortunately, I do not want to think of anything else too personal
+        right now, so... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
       </p>
 
-      <br />
-      
-
-
+      <h3>My Life</h3>
+      <p>
+        I was born and raised in San Diego. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu
+        fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id
+        est laborum.
+      </p>
+      <aside>
+        <p>
+          If you would like to know anything else about me, feel free to shoot me a message via the 
+          <a href="#contact-section">contact form!</a>
+        </p>
+      </aside>
+      <template>
+        <h3>Subsection Template</h3>
+        <p>HIDDEN SECTION</p>
+      </template>
     </section>
+
+    <br />
 
     <section id="education-experience-section">
-      <h2>Education and Experience</h2>
-      <p></p>
+      <h2>Education and Professional Experience</h2>
+      <section id="education">
+        <h3>Education</h3>
+        <p>I am currently studying computer science at <i>UCSD</i>. I am expected to graduate in Spring of 2024!</p>
+        <h4>Relevant Course Work</h4>
+        <ul>
+          <li>Software Engineering and Software Design</li>
+          <li>Advanced Algorithm Design and Analysis</li>
+          <li>Advanced Data Structures</li>
+          <li>Genetic Algorithms and Machine Learning</li>
+          <li>To be continued...</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h3>Experience</h3>
+        <details>
+          <summary><b>Software Engineer Intern at ThoughtSTEM</b></summary>
+          <p>Info here... (TODO)</p>
+        </details>
+        <br />
+        <details>
+          <summary>Code Camp Instructor at ThoughtSTEM</summary>
+          <p>Info here... (TODO)</p>
+        </details>
+        <br />
+        <details>
+          <summary>Private Math and Computer Science Tutor</summary>
+          <p>Info here... (TODO)</p>
+        </details>
+      </section>
+
+      <section id="skills">
+        <h3>Skills</h3>
+        <p>...</p>
+      </section>
+
     </section>
+
+    <br />
 
     <section id="projects-section">
       <h2>Projects</h2>
-      <p>Below contains all of my projects!</p>
-      <section id="project-A">
+      <section class="project">
         <h3>Project A</h3>
+        <details>
+          <summary>Some project stuff</summary>
+          <p>More info here</p>
+        </details>
       </section>
+
+      <section class="project">
+        <h3>Project B</h3>
+      </section>
+
     </section>
 
+    <br />
+
     <section id="contact-section">
-      <h2>Contact me</h2>
-      <p>In order to send me a message, inquiry, anything at all, please refer to the form below!</p>
+      <h2>Contact Me</h2>
+      <p>
+        In order to send me a message, inquiry, joke, anything at all, please refer to the form below! Note to TA: this
+        form lacks lots of "good" content/fields and will be updated as the development continues!
+      </p>
+      <!--Simply showing off the style tag!-->
+      <style>
+        form {
+          max-width: 30%;
+        }
+      </style>
+      <form>
+        <fieldset>
+          <legend>Identifying Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="name..." required="required">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" placeholder="email..." required="required">
+        </fieldset>
+
+        <fieldset>
+          <legend>Subject Matter</legend>
+          <label for="subject">Choose a subject:</label>
+          <select id="subject" name="subject">
+            <optgroup label="Professional Inquiries">
+              <option value="inquiry-job">Job Related Inquiries</option>
+              <option value="inquiry-project">Project Related Inquiries</option>
+            </optgroup>
+            <optgroup label="Personal Inquiries">
+              <option value="personal-question">Personal Question</option>
+              <option value="personal-joke">Joke</option>
+              <option value="personal-other">Other</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cats (Placeholder)</legend>
+          <label for="cat">Choose a cat name:</label>
+          <input list="cats" id="cat" name="cat">
+          <datalist id="cats">
+            <option value="Steve">Steve</option>
+            <option value="Cleo">Cleo</option>
+            <option value="Cam">Cam</option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="..." required="required"></textarea>
+          <input type="submit" value="Send Message!">
+        </fieldset>
+      </form>
     </section>
   </main>
 
   <footer>
     <hr />
-    <p>Site Created by Jacob Graven</p>
+    <p>&copy; 2023 Jacob Graven</p>
     <ul>
       <li><a href="https://github.com/jacobgraven">Github</a></li>
-      <li>Other...</li>
-      <li>...Things...</li>
+      <li>Contact(?)</li>
+      <li>Other things soon</li>
     </ul>
   </footer>
 </body>
